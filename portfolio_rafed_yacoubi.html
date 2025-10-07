@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Rafed YACOUBI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #0f1115;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: linear-gradient(135deg, #1a1f2b, #141820);
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid #00b3ff;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 20px rgba(0, 179, 255, 0.4);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00b3ff;
+      margin: 0.3rem 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin: 0.2rem 0;
+    }
+
+    .contact {
+      margin-top: 1rem;
+    }
+
+    .contact a {
+      color: #00b3ff;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact a:hover {
+      color: #66d1ff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      color: #00b3ff;
+      border-bottom: 2px solid #00b3ff;
+      padding-bottom: 0.3rem;
+    }
+
+    .project {
+      background: #1a1d24;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-top: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .skill {
+      background: #00b3ff22;
+      border: 1px solid #00b3ff55;
+      color: #00b3ff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #222;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="fade-in">
+    <img src="photo_profil.png" alt="Photo de profil de Rafed YACOUBI">
+    <h1>Rafed YACOUBI</h1>
+    <p>Étudiant en informatique – Développeur passionné par le jeu vidéo et la création numérique</p>
+
+    <div class="contact">
+      <a href="mailto:rafedyacoubi2006@gmail.com">📧 E-mail</a>
+      <a href="https://github.com/Rafedo75" target="_blank">🐙 GitHub</a>
+      <a href="https://linkedin.com/in/rafedyacoubi" target="_blank">💼 LinkedIn</a>
+    </div>
+  </header>
+
+  <section class="fade-in">
+    <h2>🎮 Projets</h2>
+
+    <div class="project">
+      <h3>Yggdrasil Chronicles</h3>
+      <p>
+        RPG 2D en vue du dessus mêlant steampunk et mythologie nordique. Le joueur explore un monde ouvert, affronte des ennemis, exploite leurs points faibles et utilise une épée capable d’absorber les souvenirs.
+        Le jeu propose aussi un mode multijoueur en ligne avec des vagues d’ennemis dans une arène coopérative.
+      </p>
+      <img src="yc_screenshot.png" alt="Capture d'écran de Yggdrasil Chronicles">
+    </div>
+
+    <div class="project">
+      <h3>Galaga Virus</h3>
+      <p>
+        Un remix du classique Galaga en C# et Unity, revisité sur le thème du coronavirus. Le joueur détruit des vagues de virus tout en évitant des projectiles et en gérant la propagation sur le champ de bataille.
+      </p>
+      <img src="galaga_virus.png" alt="Capture d'écran de Galaga Virus">
+    </div>
+  </section>
+
+  <section class="fade-in">
+    <h2>🧠 Compétences</h2>
+    <div class="skills">
+      <span class="skill">C#</span>
+      <span class="skill">Unity</span>
+      <span class="skill">Python</span>
+      <span class="skill">Git</span>
+      <span class="skill">Photoshop</span>
+      <span class="skill">Travail d’équipe</span>
+      <span class="skill">Créativité</span>
+    </div>
+  </section>
+
+  <footer class="fade-in">
+    &copy; 2025 – Rafed YACOUBI | Portfolio étudiant EPITA
+  </footer>
+</body>
+</html>
